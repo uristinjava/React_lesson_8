@@ -8,20 +8,15 @@ export function ChatList() {
   const [value, setValue] = useState('')
   const dispatch = useDispatch()
   const chats = useSelector(selectChat,
-   (prev, next) => prev.length === next.length)
+    (prev, next) => prev.length === next.length)
 
   console.log('update chats', chats)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch(addChat(value))
-    // onAddChat({
-    //   id: nanoid(),
-    //   name: value
-    // })
-  }
 
-  // console.log('chats', chats)
+  }
 
   return (
     <>
@@ -38,8 +33,8 @@ export function ChatList() {
 
       <h1>ChatList</h1>
       <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
+        <input
+          type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
