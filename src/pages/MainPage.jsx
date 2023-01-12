@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 
-export function MainPage () {
-  
+export function MainPage() {
+
 
 
   return (
@@ -11,5 +11,3 @@ export function MainPage () {
     </>
   )
 }
-
-// export default App

@@ -12,14 +12,6 @@ export function ProfilePage() {
 
   const dispatch = useDispatch()
 
-  /*
-  const hendleChange = () => {
-    console.log(value)
-    dispatch(changeName(value))
-    setValue('')
-  }
-  */
-
   return (
     <>
       <h1>Profile Page</h1>
@@ -30,7 +22,7 @@ export function ProfilePage() {
       <input type="checkbox" checked={visible} readOnly />
       <button onClick={() => dispatch(toggleProfile())} >change visible</button>
       <br />
-      <input 
+      <input
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
